@@ -3,6 +3,11 @@ import os
 import json
 import random
 import requests
+import os
+print("🔍 ENV DEBUG:",
+      "CLIENT_ID =", os.getenv("SPOTIFY_CLIENT_ID"),
+      "SECRET =", bool(os.getenv("SPOTIFY_CLIENT_SECRET")),
+      "REFRESH =", bool(os.getenv("SPOTIFY_REFRESH_TOKEN")))
 
 from colorthief import ColorThief
 from base64 import b64encode
